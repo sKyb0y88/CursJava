@@ -11,9 +11,11 @@ public class CalculatorSalariu {
 		
 		tester1.setNume("Oana");
 		tester1.setRatePerHour(25);
+		tester1.setAge(23);
 		
 		System.out.println(tester1.getNume());
 		System.out.println(tester1.getRatePerHour());
+		System.out.println(tester1.getNume() + " are: " + tester1.getAge() + " ani");
 		
 		Tester tester2 = new Tester();
 		tester2.setNume("Ion");
@@ -21,7 +23,8 @@ public class CalculatorSalariu {
 		
 		System.out.println(tester2.getNume());
 		System.out.println(tester2.getRatePerHour());
-		
+		tester2.setAge(30);
+		System.out.println(tester2.getNume() + " are: " + tester2.getAge() + " ani");
 		
 		CalculatorSalariu calc = new CalculatorSalariu();
 		System.out.println(calc.calculeazaSalariu(tester1.getRatePerHour()));
