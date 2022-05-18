@@ -7,8 +7,8 @@ public class Homework4 {
 	
 
 	public static void main(String[] args) {
-		//calculateSumOfNumbers();
-		numberMultiplicationTable();
+		calculateSumOfNumbers();
+		//numberMultiplicationTable();
 	}
 	
 	public static void calculateSumOfNumbers() {
@@ -25,7 +25,7 @@ public class Homework4 {
 			} else if (i==3) {
 				System.out.println("Please insert "+ i +"rd" +" number");
 				number += scan.nextInt();
-			} else if (i > 3) {
+			} else {
 				System.out.println("Please insert "+ i +"th" +" number");
 				number += scan.nextInt();
 			}		
