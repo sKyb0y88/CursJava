@@ -29,22 +29,27 @@ public class Homework5 {
 		do {
 			System.out.println("Enter your username:");
 			inputUser = scan.nextLine();
+			
 			System.out.println("Enter your password:");
-			inputPassword = scan.nextInt();
+			inputPassword = Integer.parseInt(scan.nextLine());
 			
 			if(!username.equalsIgnoreCase(inputUser) || inputPassword!=password) {
 				System.out.println("Login error");
 				counter++;
-			} else if (username.equalsIgnoreCase(inputUser) & inputPassword==password){
-				System.out.println("Login succesfully");
-				}
-			if (counter == 3) {
-				System.out.println("Maximum attempts reached. User blocked");
 			}
-		} while (counter < 3);		
+			
+		} while ((!username.equalsIgnoreCase(inputUser) || inputPassword!=password) && (counter !=3));		
+		
+		if (!username.equalsIgnoreCase(inputUser) || inputPassword!=password)
+		{
+			System.out.println("Maximum attempts reached");
+		}
+		else {
+			System.out.println("Login successful");
+		}	
 		
 		System.out.println("End of program");
 		scan.close();
-	}
+		}
 
 }
