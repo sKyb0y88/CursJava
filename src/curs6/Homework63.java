@@ -1,6 +1,5 @@
 package curs6;
 
-import java.util.Arrays;
 
 public class Homework63 {
 
@@ -15,9 +14,13 @@ public class Homework63 {
 		
 		String[] myStringArray = {"Maria", "Bob", "Ion", "George", "Oana", "Bogdan", "Oana", "Ion"};
 		
-		for(String name : myStringArray) {
-				if (Arrays.asList(myStringArray).contains(name)) {
-					System.out.println("Nume duplicat: " + name);
+		for(int i = 0 ; i < myStringArray.length; i++) {
+			System.out.println("I este: " + myStringArray[i]);
+				for (int j = i + 1; j < myStringArray.length; j++) {
+					System.out.println("J este: " + myStringArray[j]);
+					if (myStringArray[i].equals(myStringArray[j])) {
+						System.out.println("Nume duplicat: " + myStringArray[j]);
+					}
 				}
 			}
 	}

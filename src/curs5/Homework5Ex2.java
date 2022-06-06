@@ -18,7 +18,7 @@ public class Homework5Ex2 {
 	public static void fibonacciFor (int number1, int number2, int result) {
 	for(int i =0; i < 8; i++) {
 		result = number1 + number2;
-		System.out.println("Result este: " + result);
+		System.out.println("Seria Fibonnaci pentru 9 numere este: " + result);
 		number2 = number1;
 		number1 = result;
 		}
