@@ -29,7 +29,8 @@ public class Homework61 {
 			
 			System.out.println("Please enter a number to populate the array");
 			populateArray[i] = Integer.parseInt(scan.nextLine());	
-			sum = sum + populateArray[i];
+			//sum = sum + populateArray[i];   | another way to do this is below
+			sum += populateArray[i];
 		}
 		scan.close();
 		System.out.println("Sum of the numbers from array is: " + sum);
