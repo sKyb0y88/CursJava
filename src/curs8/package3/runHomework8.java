@@ -7,6 +7,7 @@ public class runHomework8 {
 		Vehicul bicicleta = new Bicicleta("Pegas", 0, "10");
 		verificaMotorizarea(bicicleta);
 		bicicleta.detaliiVehicul();
+		
 		Vehicul masina = new Masina("Mazda", 2, "100");
 		verificaMotorizarea(masina);
 		masina.detaliiVehicul();

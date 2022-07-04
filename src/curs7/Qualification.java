@@ -11,7 +11,7 @@ public class Qualification extends Teacher {
 	
 	public void verify() {
 		
-		if(experienceYears > 3 || course.equals("Java") || schedule.equals("Afternoon")) {
+		if(experienceYears > 3 && course.equals("Java") && schedule.equalsIgnoreCase("Afternoon")) {
 			displayQualification(true);
 		} else {
 			displayQualification(false);
