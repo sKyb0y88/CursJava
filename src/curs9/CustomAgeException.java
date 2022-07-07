@@ -7,4 +7,5 @@ public class CustomAgeException extends Exception{
 		super(mesaj);
 
 	}
+
 }
