@@ -14,7 +14,7 @@ public class Homework10TestLegume {
 			System.out.println("Ce leguma ai vrea sa cumperi?");
 			@SuppressWarnings("resource")
 			Scanner scanner = new Scanner(System.in);
-			String leguma = scanner.nextLine();
+			String leguma = scanner.nextLine().toLowerCase();
 
 			if (checkStock.isLegumaAvailable(leguma)) {
 				System.out.println("Leguma " + leguma + " are " + calorii.readPropertiesFile(leguma) + " calorii");			
